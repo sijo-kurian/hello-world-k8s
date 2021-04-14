@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
         - name: go
-          image: sanderknape/go-hello-world:<VERSION>
+          image: kuriansijo/go-hello-world:<VERSION>
           ports:
             - containerPort: 8080
           livenessProbe:
