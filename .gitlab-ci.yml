@@ -20,6 +20,8 @@ build:
 
 deploy:
   stage: deploy
+  tags:
+    - gitlab-org-docker
   image: dtzar/helm-kubectl
   script:
     - kubectl config set-cluster k8s --server="${SERVER}"
